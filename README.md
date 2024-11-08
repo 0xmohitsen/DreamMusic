@@ -38,7 +38,7 @@ Ensure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/0xmohitsen/DreamMusic
-   cd dream-music
+   cd DreamMusic
    ```
 2. Install frontend dependencies:
    ```bash
