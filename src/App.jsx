@@ -17,17 +17,22 @@ const App = () => {
           onCollapseToggle={() => setIsSidebarCollapsed(!isSidebarCollapsed)}
         />
 
-        {/* MiddleUI - Dynamically adjusts based on Sidebar state */}
-        <div className="flex-grow transition-all duration-300">
+        {/* MiddleUI */}
+        <div
+          className={`transition-all duration-300 ${
+            isSidebarCollapsed ? "w-[calc(80%-16px)]" : "w-[calc(80%-60px)]"
+          }`}
+        >
           <MiddleUI />
         </div>
 
-        {/* MusicPlayer - Fixed position on the right */}
-        <div className="fixed right-0 top-0 z-10 h-full w-[20%] bg-gray-800">
+        {/* MusicPlayer */}
+        <div className="w-1/5 bg-gray-800">
           <MusicPlayer />
         </div>
       </div>
     </MusicPlayerProvider>
   );
 };
+
 export default App;

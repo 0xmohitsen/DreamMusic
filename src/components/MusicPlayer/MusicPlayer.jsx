@@ -4,9 +4,8 @@ import { MusicPlayerContext } from "../../context/MusicPlayerContext";
 const MusicPlayer = () => {
   const { currentSong, isPlaying, togglePlayPause, nextSong, prevSong } =
     useContext(MusicPlayerContext);
-
   return (
-    <div className="h-full w-full bg-[#1B0A0A] p-6 text-white">
+    <div className="relative z-30 h-full w-full bg-[#1B0A0A] p-6 text-white">
       <h2 className="text-lg font-bold">Now Playing</h2>
       <div className="mt-4">
         <img
