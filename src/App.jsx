@@ -27,7 +27,7 @@ const App = () => {
         </div>
 
         {/* MusicPlayer */}
-        <div className="w-1/5 bg-gray-800">
+        <div className="w-[24%] bg-gray-800">
           <MusicPlayer />
         </div>
       </div>

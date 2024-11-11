@@ -1,11 +1,11 @@
 // import DragDropList from "../DragDropList/DragDropList";
 import Header from "./Header";
-import MichaelPic from "../../assets/michael.png";
+import MichaelPic from "../../assets/artist.png";
 import MusicTable from "./MusicList";
 
 const MiddleUI = () => {
   return (
-    <div className="flex h-screen flex-col items-center bg-red-700 p-6 text-white">
+    <div className="flex h-screen flex-col items-center bg-gradient-to-b from-[#410101] to-[#1E0606] p-6 text-white">
       <Header />
 
       <img
@@ -13,15 +13,12 @@ const MiddleUI = () => {
         alt="Michael Pic"
         width={882}
         height={452}
-        className="h-[52%] w-[88%]"
+        className="mt-10 h-[52%] w-[88%]"
       />
-      {/* <div className="flex flex-col space-y-6">
-        <h1 className="text-4xl font-bold">Michael Jackson</h1>
-        <p className="text-lg text-gray-300">27,892,501 monthly listeners</p>
-        <DragDropList />
-      </div> */}
 
-      <MusicTable />
+      <div className="scrollbar-hide h-[36%] w-[88%] overflow-y-auto">
+        <MusicTable />
+      </div>
     </div>
   );
 };
